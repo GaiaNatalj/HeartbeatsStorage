@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heartbeat Storage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="element-container">
+        <h1>Heartbeat Storage</h1>
+      </div>
+
+      <div class="element-container">
+        <div id="valoriMisurati" class="valoriMisurati"></div>
+        <button id="store">Misura Battiti</button>
+      </div>
+
+      <div class="element-container" id="authorization">
+        <label for="userAddress">Authorize User:</label>
+        <input type="text" id="grantAddress" placeholder="User Address" />
+        <button id="grantAccess">Authorize</button>
+      </div>
+
+      <div class="element-container">
+        <label for="userAddress">Revoke Access:</label>
+        <input type="text" id="revokeAddress" placeholder="User Address" />
+        <button id="revokeAccess">Revoke Access</button>
+      </div>
+
+      <div class="element-container">
+        <div id="result-container" class="result-container"></div>
+        <button id="read">Leggi Battiti</button>
+      </div>
+
+      <div class="element-container">
+        <label for="userAddress">Disconnessione:</label>
+        <button id="disconnectButton">Disconnetti</button>
+      </div>
+    </div>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
